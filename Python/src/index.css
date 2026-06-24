@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-python-light: #3776AB;
+  --color-javascript-light: #F7DF1E;
+}
+
+@layer base {
+  * {
+    border-color: #334155;
+  }
+  
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background-color: rgb(15 23 42 / 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
