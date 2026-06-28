@@ -2,7 +2,8 @@ import type { Category } from './types';
 
 export const listOperationsPart1Problems: Category = {
     id: 'list-operations-part-1',
-    title: 'List Operations Part 1',
+    title: 'Part 1',
+    isListOperationsCategory: true,
     isProblemCategory: true,
     subsections: [
         {

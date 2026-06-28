@@ -25,4 +25,6 @@ export interface Category {
   extraMethods?: { name: string; example: string }[];
   isProblemCategory?: boolean;
   isInterviewCategory?: boolean;
+  isListOperationsCategory?: boolean;
+  isDictOperationsCategory?: boolean;
 }

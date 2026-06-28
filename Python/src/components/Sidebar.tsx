@@ -122,7 +122,27 @@ export function Sidebar() {
               Coding Problems
             </h2>
             <nav className="space-y-1">
-              {categories.filter(c => c.isProblemCategory).map(renderCategory)}
+              {categories.filter(c => c.isProblemCategory && !c.isListOperationsCategory && !c.isDictOperationsCategory).map(renderCategory)}
+            </nav>
+          </div>
+
+          {/* List Operations Section */}
+          <div>
+            <h2 className="text-[11px] font-bold text-orange-400 uppercase tracking-[0.2em] mb-4 px-2 border-b border-slate-800/60 pb-2">
+              List Operations
+            </h2>
+            <nav className="space-y-1">
+              {categories.filter(c => c.isListOperationsCategory).map(renderCategory)}
+            </nav>
+          </div>
+
+          {/* Dict Operations Section */}
+          <div>
+            <h2 className="text-[11px] font-bold text-amber-400 uppercase tracking-[0.2em] mb-4 px-2 border-b border-slate-800/60 pb-2">
+              Dict Operations
+            </h2>
+            <nav className="space-y-1">
+              {categories.filter(c => c.isDictOperationsCategory).map(renderCategory)}
             </nav>
           </div>
 

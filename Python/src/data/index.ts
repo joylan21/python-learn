@@ -8,6 +8,7 @@ import { builtinMethods } from './builtinMethods';
 import { arraysAndStringsProblems, hashtablesProblems } from './codingProblems';
 import { listOperationsProblems } from './listOperationsProblems';
 import { listOperationsPart1Problems } from './listOperationsPart1';
+import { dictOperationsPart1Problems } from './dictOperationsPart1';
 import { stacksProblems, queuesProblems } from './stacksAndQueues';
 import { linkedListProblems, treesProblems } from './linkedListAndTrees';
 import { graphsProblems } from './graphs';
@@ -25,8 +26,9 @@ export const categories: Category[] = [
   builtinMethods,
   arraysAndStringsProblems,
   hashtablesProblems,
-  listOperationsProblems,
   listOperationsPart1Problems,
+  listOperationsProblems,
+  dictOperationsPart1Problems,
   stacksProblems,
   queuesProblems,
   linkedListProblems,
